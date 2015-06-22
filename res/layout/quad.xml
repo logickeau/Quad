@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/quadContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left"
+    android:layout_marginBottom="50dp"
+    android:orientation="vertical"
+    android:showDividers="end" >
+
+    <LinearLayout
+        android:id="@+id/grid_user_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:gravity="center"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Streetz11429"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quadGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/grid_bcg"
+        android:gravity="top|start"
+        android:orientation="vertical"
+        android:tileMode="disabled" >
+
+        <LinearLayout
+            android:id="@+id/gridTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp" >
+
+            <TextView
+                android:id="@+id/promoter_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BIGGY PRODUCTIONS"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/promoter"
+                android:textColorLink="@color/promoter" />
+
+            <TextView
+                android:id="@+id/quad_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DADOU COULEUR - BIRTHDAY BASH"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/title" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/imageContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|fill_vertical"
+            android:gravity="top"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:weightSum="0.5" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sat - Jan 11, 2014 [ 11:00 PM ]"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FOR INFO: 954 638 5094 | 754 235 4040"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right|end"
+                android:orientation="vertical"
+                android:weightSum="0.5" >
+
+                <TextView
+                    android:id="@+id/venueTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hollywood Live"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/venue" />
+
+                <TextView
+                    android:id="@+id/address1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2323 Hollywood BLVD"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/cityStaeZip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hollywood, Florida 33022"
+                    android:textColor="@color/white"
+                    android:textSize="11sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
